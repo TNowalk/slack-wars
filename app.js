@@ -4,6 +4,7 @@ const logger = require('./lib/logger')();
 const redact = require('redact-object');
 const Bot = require('./lib/bot');
 const Config = require('./lib/config');
+const mongoose = require('mongoose');
 
 require('./lib/utils');
 
@@ -29,6 +30,9 @@ try {
   logger.error('Could not parse config', error);
   process.exit(1);
 }
+
+// Connect to MongoDB
+mongoose.connect(config.db.url);
 
 logger.info('Using the following configuration:', redact(config, ['token', 'pass']));
 

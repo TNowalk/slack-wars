@@ -5,6 +5,8 @@
     "valid-jsdoc" : 2,
     "no-eval": 0,
     "global-require": 0,
-    "import/no-unresolved": 0
+    "import/no-unresolved": 0,
+    "no-underscore-dangle": 0,
+    "no-shadow": ["error", { "allow": ["err", "docs"] }]
   }
 }
