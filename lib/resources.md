@@ -4,3 +4,5 @@ http://www.electricscotland.com/games/twadvice.txt
 
 https://github.com/brianseitel/oasis-wars/blob/master/
 https://github.com/brianseitel/node-wars/blob/master/
+
+http://playdosgamesonline.com/trade-wars-2002.html
